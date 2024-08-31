@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img
+            src="https://res.cloudinary.com/dvydugv8v/image/upload/v1690364804/tip-calculator/logo_myo3cp.svg"
+            alt=""
+            class="logo-image"
+          />
+        </div>
+      </header>
+      <div class="border">
+        <section class="bill-inputs">
+          <div class="bill">
+            <div class="error">
+              <h1 class="input-header">Bill</h1>
+              <p class="zero-bill"></p>
+            </div>
+            <div class="input-container">
+              <img
+                src="https://res.cloudinary.com/dvydugv8v/image/upload/v1690364804/tip-calculator/icon-dollar_gtmp0x.svg"
+                alt="dollar-icon"
+                class="input-image"
+              />
+              <input type="number" placeholder="0" class="input-bill" />
+            </div>
+          </div>
+          <div class="tip">
+            <h1 class="input-header">Select Tip %</h1>
+            <div class="tip-options">
+              <button class="tip-button">5%</button>
+              <button class="tip-button">10%</button>
+              <button class="tip-button">15%</button>
+              <button class="tip-button">25%</button>
+              <button class="tip-button">50%</button>
+              <input type="number" placeholder="Custom" class="custom-input" />
+            </div>
+          </div>
+          <div class="people">
+            <div class="error">
+              <h1 class="input-header">Number of People</h1>
+              <p class="zero-people"></p>
+            </div>
+            <div class="input-container">
+              <img
+                src="https://res.cloudinary.com/dvydugv8v/image/upload/v1690364804/tip-calculator/icon-person_q2tb3y.svg"
+                alt="person-icon"
+                class="input-image"
+              />
+              <input type="number" placeholder="0" class="input-person" />
+            </div>
+          </div>
+        </section>
+        <section class="tip-output">
+          <div class="container1">
+            <div class="tip-amount">
+              <p>Tip Amount <span class="break">/ person</span></p>
+              <h2 class="tip-person"></h2>
+            </div>
+            <div class="total-amount">
+              <p>Total <span class="break">/ person</span></p>
+              <h2 class="total-person"></h2>
+            </div>
+            <button class="reset-btn" disabled>RESET</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
